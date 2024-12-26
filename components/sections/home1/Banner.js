@@ -54,15 +54,15 @@ export default function Banner() {
                   <div className="row">
                     <div className="col-xl-12">
                       <div className="main-slider__content">
-                        <p className="main-slider__sub-title">Music Festival</p>
+                        <p className="main-slider__sub-title">Group</p>
                         <h2 className="main-slider__title">
-                          Discover a World <br /> <span>of Celebration</span>
+                         Welcome to <br/>Fastrack <br /> <span>Where Every Event <br/>Becomes a <br/> Masterpiece.</span>
                         </h2>
                         <p className="main-slider__text">
-                          As an AI language model, I don't have personal opinions or points of view. 
-                          However, I <br /> can tell you that design is a multifaceted field that encompasses various elements.
+                        Your event deserves more than just planning; it deserves perfection. At Fastrack Group, <br/>we specialize in transforming your ideas into remarkable experiences. With over a decade of<br/> expertise, we’ve successfully curated events that inspire, connect, and leave lasting<br/> impressions.
+                          <br /> Whether it’s a corporate gathering, a grand celebration, or a cultural extravaganza, our team <br/>ensures every detail is meticulously handled. Let us redefine how you experience events.
                         </p>
-                        <ul className="list-unstyled main-slider__address">
+                        {/* <ul className="list-unstyled main-slider__address">
                           <li>
                             <div className="icon">
                               <span className="icon-pin"></span>
@@ -79,8 +79,8 @@ export default function Banner() {
                               <p>10 Am To 10 Pm 20 April 2024</p>
                             </div>
                           </li>
-                        </ul>
-                        <div className="main-slider__btn-box">
+                        </ul> */}
+                        <div className="main-slider__btn-box mt-2">
                           <Link href="/contact" className="main-slider__btn thm-btn">
                             Purchase Ticket
                             <span className="icon-arrow-right"></span>

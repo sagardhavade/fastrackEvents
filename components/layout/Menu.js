@@ -42,16 +42,17 @@ export default function Menu() {
           <li><Link href="/404">404 Error</Link></li>
         </ul>
       </li>
-      <li className="dropdown">
-        <Link href="#">Services</Link>
-        <ul>
+      {/* <li className="dropdown"> */}
+      <li>
+        <Link href="/services">Services</Link>
+        {/* <ul>
           <li><Link href="/services">Services</Link></li>
           <li><Link href="/event-prodigy">Event Prodigy</Link></li>
           <li><Link href="/stellar-events-co">Stellar Events Co</Link></li>
           <li><Link href="/elite-event-management">Elite Event Management</Link></li>
           <li><Link href="/infinite-occasions">Infinite Occasions</Link></li>
           <li><Link href="/dream-event-planners">Dream Event Planners</Link></li>
-        </ul>
+        </ul> */}
       </li>
       <li className="dropdown">
         <Link href="#">Event</Link>

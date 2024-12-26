@@ -2,35 +2,39 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import ServicesOne from "./ServicesOne";
+import { servicesContent1 } from "./servicesContent";
 
 export default function EventOne() {
   // State for dynamic content
   const [eventContent, setEventContent] = useState({
-    sectionTagline: "About Our Event",
-    sectionTitle: "Uniting Creating of the Memories",
+    sectionTagline: "About Us",
+    sectionTitle: "Welcome to Fastrack Group, your trusted partner in crafting extraordinary events. Since our inception in 2009, we have been at the forefront of the event management industry, delivering unparalleled experiences for clients across India. Founded by the visionary Mr. Sachin Kaul, Fastrack Group has established itself as a name synonymous with reliability, innovation, and excellence.",
+    sectionTitle1: "At Fastrack, we go beyond traditional event management. We believe in creating unforgettable memories, whether it’s a milestone celebration, a high-profile corporate event, or a spectacular concert. Our approach is simple yet profound – understand your needs, design with precision, and execute with passion. As your event partner and consultant, we are dedicated to turning your vision into a reality.",
     buttonText: "Join The Event",
-    buttonLink: "/event-details",
+    buttonLink: "/event-details",    
     points: [
       {
         id: 1,
         iconClass: "icon-air-horn",
-        title: "Artists & bands",
+        title: "Mission",
         description:
-          "Events bring people together for a shared experience celebration. From weddings and birthdays to conferences.",
+          "To deliver exceptional, tailor-made events that inspire, connect, and create lasting memories, while exceeding client expectations through innovation and dedication.",
         link: "/event",
       },
       {
         id: 2,
         iconClass: "icon-party-blower",
-        title: "Audience Event Planner",
+        title: "Vision",
         description:
-          "Events bring people together for a shared experience celebration. From weddings and birthdays to conferences.",
+          "To be recognized as a global leader in event management, setting benchmarks in creativity, precision, and excellence, and building meaningful connections through unforgettable experiences.",
         link: "/event",
       },
     ],
     eventImage: "/assets/images/resources/event-one-img-1.jpg",
   });
 
+  
   return (
     <>
       {/* Event One Start */}
@@ -47,16 +51,23 @@ export default function EventOne() {
                     {eventContent.sectionTagline}
                   </span>
                 </div>
-                <h2 className="section-title__title">
+                {/* <h2 className="section-title__title">
                   {eventContent.sectionTitle}
-                </h2>
+                </h2> */}
+                <p className="content">
+                  {eventContent.sectionTitle}
+                  
+                </p>
+                <p>
+                {eventContent.sectionTitle1}
+                </p>
               </div>
-              <div className="event-one__btn-box">
+              {/* <div className="event-one__btn-box">
                 <Link href={eventContent.buttonLink} className="event-one__btn thm-btn">
                   {eventContent.buttonText}
                   <span className="icon-arrow-right"></span>
                 </Link>
-              </div>
+              </div> */}
             </div>
 
             <ul className="list-unstyled event-one__points">
@@ -74,7 +85,7 @@ export default function EventOne() {
                 </li>
               ))}
             </ul>
-
+            <ServicesOne servicesContent={servicesContent1} />
             <div className="event-one__img-box">
               <img src={eventContent.eventImage} alt="Event" />
             </div>

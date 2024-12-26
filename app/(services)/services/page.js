@@ -4,54 +4,90 @@ export default function Home() {
   const servicesData = [
     {
       id: 1,
-      title: "Eventful Ventures",
+      title: "Corporate Events and Conferences",
       description:
-        "Events bring people together for a shared experience and From weddings",
+        "Elevate your business engagements with flawlessly executed corporate events and conferences tailored to meet your objectives.",
       link: "event-prodigy",
       icon: "icon-camera",
       wowDelay: "100ms",
     },
     {
       id: 2,
-      title: "Stellar Events Co",
+      title: "High-Profile Parties and Celebrations",
       description:
-        "Events bring people together for a shared experience and From weddings",
+        "From intimate gatherings to lavish galas, we craft celebrations that leave lasting impressions.",
       link: "stellar-events-co",
       icon: "icon-skewer",
       wowDelay: "200ms",
     },
     {
       id: 3,
-      title: "Elite Event Management",
+      title: "Celebrity Events and Public Appearances",
       description:
-        "Events bring people together for a shared experience and From weddings",
+        "Seamlessly managing celebrity engagements, ensuring every detail shines under the spotlight.",
       link: "elite-event-management",
       icon: "icon-dinner-table",
       wowDelay: "300ms",
     },
     {
       id: 4,
-      title: "Advanced Dental Solutions",
+      title: "Concerts and Fashion Shows",
       description:
-        "Events bring people together for a shared experience and From weddings",
+        "Breathtaking stages, flawless production, and unforgettable performances define our approach.",
       link: "infinite-occasions",
       icon: "icon-cake",
       wowDelay: "400ms",
     },
     {
       id: 5,
-      title: "Elite Dental Specialists",
+      title: "Festive Events",
       description:
-        "Events bring people together for a shared experience and From weddings",
+        "Capture the essence of tradition and celebration with our vibrant festive event solutions.",
       link: "dream-event-planners",
       icon: "icon-dental-specialists",
       wowDelay: "500ms",
     },
     {
       id: 6,
-      title: "Modern Cos",
+      title: "Product Launches",
       description:
-        "Events bring people together for a shared experience and From weddings",
+        "Unveil your products with impact, ensuring your brand’s first impression is unforgettable.",
+      link: "event-prodigy",
+      icon: "icon-modern-cos",
+      wowDelay: "600ms",
+    },
+    {
+      id: 7,
+      title: "Merchandising and Promotions",
+      description:
+        "Drive brand engagement with innovative merchandising and promotional strategies.",
+      link: "event-prodigy",
+      icon: "icon-modern-cos",
+      wowDelay: "600ms",
+    },
+    {
+      id: 8,
+      title: "Expos and Exhibitions",
+      description:
+        "Create standout exhibition spaces that captivate audiences and drive connections.",
+      link: "event-prodigy",
+      icon: "icon-modern-cos",
+      wowDelay: "600ms",
+    },
+    {
+      id: 9,
+      title: "Road Shows and Brand-Building Events",
+      description:
+        "Take your brand on the road with impactful, interactive experiences.",
+      link: "event-prodigy",
+      icon: "icon-modern-cos",
+      wowDelay: "600ms",
+    },
+    {
+      id: 7,
+      title: "Sports Events",
+      description:
+        "From tournaments to sports promotions, we bring energy and precision to the field.",
       link: "event-prodigy",
       icon: "icon-modern-cos",
       wowDelay: "600ms",
@@ -60,7 +96,7 @@ export default function Home() {
 
   return (
     <>
-      <Layout headerStyle={4} footerStyle={1} breadcrumbTitle="Services">
+      <Layout headerStyle={4} footerStyle={1} breadcrumbTitle="Our Services">
         <div>
           {/*Services Page Start*/}
           <section className="services-page">
@@ -77,17 +113,19 @@ export default function Home() {
                         <span className={service.icon}></span>
                       </div>
                       <h3 className="services-one__title">
-                        <Link href={service.link}>{service.title}</Link>
+                        {/* <Link href={service.link}>{service.title}</Link> */}
+                        {service.title}
+
                       </h3>
                       <p className="services-one__text">
                         {service.description}
                       </p>
-                      <Link
+                      {/* <Link
                         href={service.link}
                         className="services-one__read-more"
                       >
                         Read More <span className="icon-arrow-right"></span>
-                      </Link>
+                      </Link> */}
                     </div>
                   </div>
                 ))}
