@@ -11,7 +11,8 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, isSide
                 <div className="main-menu__left">
                   <div className="main-menu__logo">
                     <Link href="/">
-                        <img src="/assets/images/resources/logo-1.png" alt="Logo" />
+                        {/* <img src="/assets/images/resources/logo-1.png" alt="Logo" /> */}
+                        <img src="/assets/images/resources/logo.jpeg" alt="Logo" />
                     </Link>
                   </div>
                 </div>
@@ -51,7 +52,8 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, isSide
                 <div className="main-menu__left">
                   <div className="main-menu__logo">
                     <Link href="/">
-                        <img src="/assets/images/resources/logo-1.png" alt="Logo" />
+                        {/* <img src="/assets/images/resources/logo-1.png" alt="Logo" /> */}
+                        <img src="/assets/images/resources/logo.jpeg" alt="Logo" />
                     </Link>
                   </div>
                 </div>
